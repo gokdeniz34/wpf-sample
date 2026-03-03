@@ -1,0 +1,10 @@
+<UserControl x:Class="RecallFinanceApp.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="White">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="⚙️ AYARLAR EKRANI" FontSize="24" FontWeight="Bold"/>
+            <TextBlock Text="Buradan parametreleri düzenleyebilirsiniz." Foreground="Gray"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
