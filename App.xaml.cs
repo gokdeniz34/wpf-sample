@@ -19,7 +19,6 @@ public partial class App : Application
             .ConfigureAppConfiguration((context, config) =>
             {
                 config.SetBasePath(Directory.GetCurrentDirectory());
-                config.AddJsonFile("appsettings.json");
                 config.AddUserSecrets<App>();
             })
             .ConfigureServices((context, services) =>
@@ -59,7 +58,7 @@ public partial class App : Application
             }
             catch (Exception ex)
             {
-                ShowErrorAndExit($"Critical database error: {ex.Message}");
+                ShowErrorAndExit($"Critical datFabase error: {ex.Message}");
                 return;
             }
         }
