@@ -52,21 +52,18 @@ public partial class App : Application
                 bool canConnect = await dbContext.Database.CanConnectAsync();
                 if (!canConnect)
                 {
-                    ShowErrorAndExit("Database connection failed! Check your MySQL service.");
+                    ShowErrorAndExit("Database connection failed! Check your credentials.");
                     return;
                 }
             }
             catch (Exception ex)
             {
-                ShowErrorAndExit($"Critical datFabase error: {ex.Message}");
+                ShowErrorAndExit($"Critical database exception: {ex.Message}");
                 return;
             }
         }
 
         var mainWindow = _host.Services.GetRequiredService<MainWindow>();
-        var mainVM = _host.Services.GetRequiredService<MainViewModel>();
-
-        mainWindow.DataContext = mainVM;
         mainWindow.Show();
     }
 
