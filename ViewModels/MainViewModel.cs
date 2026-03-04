@@ -26,7 +26,6 @@ namespace RecallFinanceApp.ViewModels
 
         public MainViewModel()
         {
-            // Uygulama açıldığında Dashboard ekranda olsun
             CurrentView = new DashboardView();
         }
 

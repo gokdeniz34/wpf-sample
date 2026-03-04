@@ -13,7 +13,6 @@ namespace RecallFinanceApp.Views
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            // Dashboard, MainWindow içinde yaşadığı için Window üzerinden ViewModel'e ulaşıyoruz
             var mainWindow = Window.GetWindow(this);
             if (mainWindow?.DataContext is MainViewModel vm)
             {

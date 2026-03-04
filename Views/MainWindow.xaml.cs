@@ -8,8 +8,6 @@ namespace RecallFinanceApp.Views
         public MainWindow()
         {
             InitializeComponent();
-            // ViewModel'i View'a bağlıyoruz
-            this.DataContext = new MainViewModel();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)
